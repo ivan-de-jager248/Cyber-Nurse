@@ -1,0 +1,232 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NurseForm from '../components/NurseForm.vue';
+import AnimatedElement from '../components/AnimatedElement.vue';
+---
+
+<Layout title="For Nurses | Cyber Nurse">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" client:load>
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            For Nurses: Find Your Ideal Shift
+          </h1>
+          <p class="text-xl mb-8">
+            Take control of your schedule, boost your income, and advance your career
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#register" class="btn bg-white text-primary-600 hover:bg-gray-100 hover:scale-105 transition-all">
+              Sign Up Now
+            </a>
+            <a href="#benefits" class="btn bg-transparent border-2 border-white hover:bg-white hover:text-primary-600 transition-all">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </AnimatedElement>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section id="benefits" class="py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" triggerOnScroll={true} client:load>
+        <h2 class="text-3xl font-bold text-center mb-12">Benefits for Nurses</h2>
+      </AnimatedElement>
+      
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <AnimatedElement animation="slide-up" triggerOnScroll={true} client:load>
+          <div class="text-center bg-white p-8 rounded-lg shadow-md">
+            <div class="bg-primary-100 p-5 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Flexibility & Control</h3>
+            <p class="text-gray-600">Choose when and where you work. Set your own schedule and pick shifts that fit your lifestyle.</p>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-up" triggerOnScroll={true} delay={0.2} client:load>
+          <div class="text-center bg-white p-8 rounded-lg shadow-md">
+            <div class="bg-primary-100 p-5 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Competitive Pay</h3>
+            <p class="text-gray-600">Earn premium rates for your skills and experience. Get paid weekly with transparent compensation.</p>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-up" triggerOnScroll={true} delay={0.4} client:load>
+          <div class="text-center bg-white p-8 rounded-lg shadow-md">
+            <div class="bg-primary-100 p-5 rounded-full w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Career Growth</h3>
+            <p class="text-gray-600">Gain experience in diverse healthcare settings and expand your professional network.</p>
+          </div>
+        </AnimatedElement>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" triggerOnScroll={true} client:load>
+        <h2 class="text-3xl font-bold text-center mb-12">Platform Features</h2>
+      </AnimatedElement>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <AnimatedElement animation="slide-left" triggerOnScroll={true} client:load>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-start">
+              <div class="bg-primary-100 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-xl mb-2">Personalized Recommendations</h3>
+                <p class="text-gray-600">Our AI matches you with shifts that align with your skills, preferences, and availability.</p>
+              </div>
+            </div>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-left" triggerOnScroll={true} delay={0.2} client:load>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-start">
+              <div class="bg-primary-100 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-xl mb-2">Mobile Accessibility</h3>
+                <p class="text-gray-600">Manage your schedule, accept shifts, and communicate with facilities from anywhere.</p>
+              </div>
+            </div>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-left" triggerOnScroll={true} delay={0.4} client:load>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-start">
+              <div class="bg-primary-100 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-xl mb-2">Secure Messaging</h3>
+                <p class="text-gray-600">Communicate directly with healthcare facilities through our secure, HIPAA-compliant platform.</p>
+              </div>
+            </div>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-left" triggerOnScroll={true} delay={0.2} client:load>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-start">
+              <div class="bg-primary-100 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-xl mb-2">Digital Credentials</h3>
+                <p class="text-gray-600">Store your licenses, certifications, and work history securely in one place for easy verification.</p>
+              </div>
+            </div>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-left" triggerOnScroll={true} delay={0.4} client:load>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-start">
+              <div class="bg-primary-100 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-xl mb-2">Quick Payments</h3>
+                <p class="text-gray-600">Get paid weekly with direct deposit. Track your earnings in real-time on our dashboard.</p>
+              </div>
+            </div>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-left" triggerOnScroll={true} delay={0.6} client:load>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex items-start">
+              <div class="bg-primary-100 p-3 rounded-full mr-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-xl mb-2">Facility Vetting</h3>
+                <p class="text-gray-600">All healthcare facilities on our platform are thoroughly vetted to ensure a safe working environment.</p>
+              </div>
+            </div>
+          </div>
+        </AnimatedElement>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" triggerOnScroll={true} client:load>
+        <div class="max-w-4xl mx-auto text-center">
+          <svg class="w-12 h-12 text-gray-300 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
+          </svg>
+          <p class="text-2xl italic mb-6 text-gray-600">"Working with Cyber Nurse has completely transformed my career. I'm able to pick up shifts that work with my schedule, earn more, and still have time for my family."</p>
+          <div>
+            <p class="font-bold">Sarah Johnson, RN</p>
+            <p class="text-gray-500">Critical Care Nurse, 8 years of experience</p>
+          </div>
+        </div>
+      </AnimatedElement>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section id="register" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-2xl mx-auto">
+        <AnimatedElement animation="slide-up" triggerOnScroll={true} client:load>
+          <h2 class="text-3xl font-bold text-center mb-12">Register as a Nurse</h2>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <NurseForm client:load />
+          </div>
+        </AnimatedElement>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-r from-primary-600 to-primary-800 py-16">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" client:load>
+        <div class="max-w-3xl mx-auto text-center text-white">
+          <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Nursing Career?</h2>
+          <p class="text-xl mb-8">Join thousands of nurses who have taken control of their schedules and increased their earnings with Cyber Nurse.</p>
+          <a href="#register" class="btn bg-white text-primary-600 hover:bg-gray-100 hover:scale-105 transition-all">
+            Sign Up Now
+          </a>
+        </div>
+      </AnimatedElement>
+    </div>
+  </section>
+</Layout>

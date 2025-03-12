@@ -1,0 +1,186 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AnimatedElement from '../components/AnimatedElement.vue';
+---
+
+<Layout title="Cyber Nurse | Streamlining Healthcare Staffing">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-[#007bff] to-[#28a745] text-white py-24">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" client:load>
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-5xl md:text-6xl font-bold mb-6 font-inter">
+            Cyber Nurse: Streamlining Staffing, Empowering Nurses
+          </h1>
+          <p class="text-xl md:text-2xl mb-10">
+            Connecting qualified nurses with hospitals in need, quickly and efficiently.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="/hospitals/register" class="btn bg-white text-[#007bff] hover:bg-gray-100 text-lg px-8 py-3 rounded-lg font-semibold transition-colors">
+              Hospitals: Get Started
+            </a>
+            <a href="/nurses/register" class="btn bg-[#28a745] hover:bg-[#5cb85c] text-white text-lg px-8 py-3 rounded-lg font-semibold transition-colors">
+              Nurses: Find Your Next Shift
+            </a>
+          </div>
+        </div>
+      </AnimatedElement>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <AnimatedElement triggerOnScroll={true} animation="slide-up" client:load>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">How It Works</h2>
+      </AnimatedElement>
+      
+      <div class="grid md:grid-cols-3 gap-12">
+        {[
+          {
+            step: 1,
+            title: "Hospitals Post Shifts",
+            description: "Easily post available shifts and requirements through our intuitive platform.",
+            animation: "slide-right"
+          },
+          {
+            step: 2,
+            title: "Cyber Nurse Matches",
+            description: "Our AI-powered system matches qualified nurses to your specific needs.",
+            animation: "slide-up"
+          },
+          {
+            step: 3,
+            title: "Nurses Book Instantly",
+            description: "Qualified nurses can instantly book shifts that match their skills and schedule.",
+            animation: "slide-left"
+          }
+        ].map((item) => (
+          <AnimatedElement triggerOnScroll={true} animation={item.animation} client:load>
+            <div class="text-center p-6 bg-white rounded-xl shadow-sm">
+              <div class="bg-[#e2f0ff] w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-3xl font-bold text-[#007bff]">{item.step}</span>
+              </div>
+              <h3 class="text-xl font-semibold mb-4">{item.title}</h3>
+              <p class="text-gray-600">{item.description}</p>
+            </div>
+          </AnimatedElement>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Sections -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-20">
+        <!-- For Hospitals -->
+        <AnimatedElement triggerOnScroll={true} animation="slide-right" client:load>
+          <div class="bg-[#e2f0ff] p-8 rounded-xl">
+            <h2 class="text-3xl font-bold mb-6">For Hospitals</h2>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <span class="text-[#007bff] mr-2">✓</span>
+                Reduce staffing time by 75%
+              </li>
+              <li class="flex items-center">
+                <span class="text-[#007bff] mr-2">✓</span>
+                Access to verified, qualified nurses
+              </li>
+              <li class="flex items-center">
+                <span class="text-[#007bff] mr-2">✓</span>
+                Significant cost savings
+              </li>
+            </ul>
+            <a href="/hospitals" class="inline-block bg-[#007bff] text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors">
+              Learn More
+            </a>
+          </div>
+        </AnimatedElement>
+
+        <!-- For Nurses -->
+        <AnimatedElement triggerOnScroll={true} animation="slide-left" client:load>
+          <div class="bg-[#dff0d8] p-8 rounded-xl">
+            <h2 class="text-3xl font-bold mb-6">For Nurses</h2>
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center">
+                <span class="text-[#28a745] mr-2">✓</span>
+                Flexible scheduling
+              </li>
+              <li class="flex items-center">
+                <span class="text-[#28a745] mr-2">✓</span>
+                Competitive pay rates
+              </li>
+              <li class="flex items-center">
+                <span class="text-[#28a745] mr-2">✓</span>
+                Career growth opportunities
+              </li>
+            </ul>
+            <a href="/nurses/register" class="inline-block bg-[#28a745] text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors">
+              Sign Up Now
+            </a>
+          </div>
+        </AnimatedElement>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-gray-50 py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement triggerOnScroll={true} animation="slide-up" client:load>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Users Say</h2>
+      </AnimatedElement>
+      
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        {[
+          {
+            quote: "Cyber Nurse has transformed our staffing process. We've reduced our time-to-fill by 60% and found exceptional nurses.",
+            name: "Dr. Sarah Chen",
+            role: "Chief Nursing Officer",
+            animation: "slide-right"
+          },
+          {
+            quote: "I love the flexibility. I can pick up shifts that work for my schedule and the pay is fantastic!",
+            name: "Michael Rodriguez",
+            role: "RN, Critical Care",
+            animation: "slide-left"
+          }
+        ].map((item) => (
+          <AnimatedElement triggerOnScroll={true} animation={item.animation} client:load>
+            <div class="bg-white p-8 rounded-xl shadow-sm">
+              <p class="text-gray-600 mb-6 text-lg italic">"{item.quote}"</p>
+              <div class="flex items-center">
+                <div class="w-12 h-12 bg-[#e2f0ff] rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-semibold">{item.name}</h4>
+                  <p class="text-sm text-gray-500">{item.role}</p>
+                </div>
+              </div>
+            </div>
+          </AnimatedElement>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement triggerOnScroll={true} animation="zoom" client:load>
+        <div class="bg-gradient-to-r from-[#007bff] to-[#28a745] text-white rounded-2xl p-12 text-center max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Healthcare Staffing?</h2>
+          <p class="text-xl mb-10">Join thousands of hospitals and nurses already using Cyber Nurse</p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="/hospitals/register" class="btn bg-white text-[#007bff] hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold">
+              Get Started as Hospital
+            </a>
+            <a href="/nurses/register" class="btn bg-[#28a745] hover:bg-[#5cb85c] text-white px-8 py-3 rounded-lg font-semibold">
+              Join as Nurse
+            </a>
+          </div>
+        </div>
+      </AnimatedElement>
+    </div>
+  </section>
+</Layout>

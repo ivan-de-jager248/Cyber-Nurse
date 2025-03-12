@@ -1,0 +1,215 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HospitalForm from '../components/HospitalForm.vue';
+import AnimatedElement from '../components/AnimatedElement.vue';
+---
+
+<Layout title="For Hospitals | Cyber Nurse Staffing Solutions">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-primary-600 to-primary-800 text-white py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" client:load>
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            For Hospitals: Optimize Your Staffing Strategy
+          </h1>
+          <p class="text-xl mb-8">
+            Find qualified nurses quickly and efficiently with our specialized staffing platform
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="#partner" class="btn bg-white text-primary-600 hover:bg-gray-100 hover:scale-105 transition-all">
+              Request a Demo
+            </a>
+            <a href="#benefits" class="btn bg-transparent border-2 border-white hover:bg-white hover:text-primary-600 transition-all">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </AnimatedElement>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section id="benefits" class="py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" triggerOnScroll={true} client:load>
+        <h2 class="text-3xl font-bold text-center mb-12">Benefits for Hospitals</h2>
+      </AnimatedElement>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <AnimatedElement animation="slide-up" delay={0.1} triggerOnScroll={true} client:load>
+          <div class="bg-white p-8 rounded-lg shadow-md text-center h-full">
+            <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Improved Efficiency</h3>
+            <p class="text-gray-600 mb-4">Reduce time-to-hire by up to 70% compared to traditional staffing methods.</p>
+            <div class="bg-gray-50 p-3 rounded-lg">
+              <span class="block text-primary-600 text-2xl font-bold">93%</span>
+              <span class="text-sm text-gray-500">of hospitals report faster shift filling</span>
+            </div>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-up" delay={0.2} triggerOnScroll={true} client:load>
+          <div class="bg-white p-8 rounded-lg shadow-md text-center h-full">
+            <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Cost Savings</h3>
+            <p class="text-gray-600 mb-4">Reduce staffing costs by eliminating agency fees and optimizing shift coverage.</p>
+            <div class="bg-gray-50 p-3 rounded-lg">
+              <span class="block text-primary-600 text-2xl font-bold">22%</span>
+              <span class="text-sm text-gray-500">average reduction in staffing expenses</span>
+            </div>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-up" delay={0.3} triggerOnScroll={true} client:load>
+          <div class="bg-white p-8 rounded-lg shadow-md text-center h-full">
+            <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Qualified Talent</h3>
+            <p class="text-gray-600 mb-4">Access a pre-screened network of licensed, experienced nursing professionals.</p>
+            <div class="bg-gray-50 p-3 rounded-lg">
+              <span class="block text-primary-600 text-2xl font-bold">10,000+</span>
+              <span class="text-sm text-gray-500">verified nurses in our network</span>
+            </div>
+          </div>
+        </AnimatedElement>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="bg-gray-50 py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" triggerOnScroll={true} client:load>
+        <h2 class="text-3xl font-bold text-center mb-12">Platform Features</h2>
+      </AnimatedElement>
+      
+      <div class="grid md:grid-cols-2 gap-x-12 gap-y-16 max-w-4xl mx-auto">
+        <AnimatedElement animation="slide-right" triggerOnScroll={true} client:load>
+          <div class="flex items-start">
+            <div class="bg-primary-100 p-4 rounded-lg mr-5 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Instant Posting</h3>
+              <p class="text-gray-600">Post shift openings in minutes, not days. Our platform allows you to create and publish shift opportunities that reach qualified nurses immediately.</p>
+            </div>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-left" triggerOnScroll={true} client:load>
+          <div class="flex items-start">
+            <div class="bg-primary-100 p-4 rounded-lg mr-5 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Automated Scheduling</h3>
+              <p class="text-gray-600">Our AI-powered scheduling system matches your needs with available nurses based on qualifications, experience, and shift preferences.</p>
+            </div>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-right" delay={0.1} triggerOnScroll={true} client:load>
+          <div class="flex items-start">
+            <div class="bg-primary-100 p-4 rounded-lg mr-5 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Comprehensive Reporting</h3>
+              <p class="text-gray-600">Access real-time analytics and reports on staffing patterns, costs, fill rates, and nurse performance to optimize your staffing strategy.</p>
+            </div>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-left" delay={0.1} triggerOnScroll={true} client:load>
+          <div class="flex items-start">
+            <div class="bg-primary-100 p-4 rounded-lg mr-5 flex-shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Compliance Management</h3>
+              <p class="text-gray-600">All nurses on our platform are pre-verified for credentials and licenses. We handle background checks, certification verification, and ongoing compliance monitoring.</p>
+            </div>
+          </div>
+        </AnimatedElement>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" triggerOnScroll={true} client:load>
+        <div class="max-w-3xl mx-auto text-center">
+          <svg class="w-12 h-12 text-gray-300 mx-auto mb-6" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+          </svg>
+          <p class="text-xl md:text-2xl text-gray-600 font-light mb-8">
+            "Cyber Nurse has transformed our staffing process. We've reduced overtime costs by 32% while maintaining excellent care quality. Their platform is intuitive and the quality of nurses is outstanding."
+          </p>
+          <div class="flex items-center justify-center">
+            <div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden mr-4">
+              <img src="/hospital-director.webp" alt="Hospital Director" class="w-full h-full object-cover">
+            </div>
+            <div class="text-left">
+              <p class="font-medium">Dr. Jennifer Wilson</p>
+              <p class="text-gray-500 text-sm">Director of Nursing, Memorial General Hospital</p>
+            </div>
+          </div>
+        </div>
+      </AnimatedElement>
+    </div>
+  </section>
+  
+  <!-- Partnership Form -->
+  <section id="partner" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <AnimatedElement animation="fade" triggerOnScroll={true} client:load>
+          <h2 class="text-3xl font-bold text-center mb-12">Partner with Cyber Nurse</h2>
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <HospitalForm client:load />
+          </div>
+        </AnimatedElement>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="bg-primary-700 text-white py-14">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" triggerOnScroll={true} client:load>
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <div class="text-center md:text-left mb-6 md:mb-0">
+            <h2 class="text-2xl md:text-3xl font-bold mb-2">Ready to optimize your staffing strategy?</h2>
+            <p class="text-primary-100">Join hundreds of hospitals already transforming their nursing workforce</p>
+          </div>
+          <div>
+            <a href="#partner" class="btn bg-white text-primary-600 hover:bg-gray-100 hover:scale-105 transition-all">
+              Request a Demo Today
+            </a>
+          </div>
+        </div>
+      </AnimatedElement>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,158 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AnimatedElement from '../components/AnimatedElement.vue';
+---
+
+<Layout title="About Cyber Nurse | Connecting Healthcare Professionals">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-[#007bff] to-[#28a745] text-white py-16">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" client:load>
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">About Cyber Nurse</h1>
+          <p class="text-xl">Transforming Healthcare Staffing Through Innovation</p>
+        </div>
+      </AnimatedElement>
+    </div>
+  </section>
+  
+  <!-- Mission Section -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="slide-up" triggerOnScroll={true} client:load>
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Our Mission</h2>
+          <p class="text-xl text-gray-600 mb-8">
+            At Cyber Nurse, we're committed to revolutionizing healthcare staffing by creating seamless connections between qualified nurses and hospitals in need. We believe in empowering healthcare professionals while ensuring patients receive the highest quality care through optimal staffing solutions.
+          </p>
+          <p class="text-lg text-gray-600">
+            By leveraging technology and human expertise, we're building a more efficient, transparent, and supportive healthcare ecosystem that works for everyone.
+          </p>
+        </div>
+      </AnimatedElement>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="bg-gray-50 py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" triggerOnScroll={true} client:load>
+        <h2 class="text-3xl font-bold text-center mb-12">Our Core Values</h2>
+      </AnimatedElement>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <AnimatedElement animation="slide-up" delay={0.1} triggerOnScroll={true} client:load>
+          <div class="bg-white p-8 rounded-lg shadow-md text-center h-full">
+            <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Professionalism</h3>
+            <p class="text-gray-600">We uphold the highest standards of conduct, expertise, and integrity in all our interactions and placements.</p>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-up" delay={0.2} triggerOnScroll={true} client:load>
+          <div class="bg-white p-8 rounded-lg shadow-md text-center h-full">
+            <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Reliability</h3>
+            <p class="text-gray-600">We deliver consistent, dependable service that hospitals and healthcare professionals can count on when it matters most.</p>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-up" delay={0.3} triggerOnScroll={true} client:load>
+          <div class="bg-white p-8 rounded-lg shadow-md text-center h-full">
+            <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Innovation</h3>
+            <p class="text-gray-600">We continuously evolve our platform and processes to better serve the changing needs of the healthcare industry.</p>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-up" delay={0.4} triggerOnScroll={true} client:load>
+          <div class="bg-white p-8 rounded-lg shadow-md text-center h-full">
+            <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Satisfaction</h3>
+            <p class="text-gray-600">We prioritize the well-being and satisfaction of both healthcare facilities and the professionals who serve them.</p>
+          </div>
+        </AnimatedElement>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="py-20">
+    <div class="container mx-auto px-4">
+      <AnimatedElement animation="fade" triggerOnScroll={true} client:load>
+        <h2 class="text-3xl font-bold text-center mb-12">Our Leadership Team</h2>
+      </AnimatedElement>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <AnimatedElement animation="slide-up" delay={0.1} triggerOnScroll={true} client:load>
+          <div class="text-center">
+            <div class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+              <img src="/team-member1.webp" alt="Dr. Sarah Johnson" class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Dr. Sarah Johnson</h3>
+            <p class="text-primary-600 mb-2">Chief Executive Officer</p>
+            <p class="text-gray-600">Former hospital administrator with 15+ years of experience in healthcare management and staffing solutions.</p>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-up" delay={0.2} triggerOnScroll={true} client:load>
+          <div class="text-center">
+            <div class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+              <img src="/team-member2.webp" alt="Michael Rodriguez" class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Michael Rodriguez, RN</h3>
+            <p class="text-primary-600 mb-2">Chief Nursing Officer</p>
+            <p class="text-gray-600">Registered nurse with a decade of clinical experience and expertise in nursing workforce development.</p>
+          </div>
+        </AnimatedElement>
+        
+        <AnimatedElement animation="slide-up" delay={0.3} triggerOnScroll={true} client:load>
+          <div class="text-center">
+            <div class="w-32 h-32 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
+              <img src="/team-member3.webp" alt="Lisa Chen" class="w-full h-full object-cover">
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Lisa Chen</h3>
+            <p class="text-primary-600 mb-2">Chief Technology Officer</p>
+            <p class="text-gray-600">Tech innovator with extensive experience building platforms that connect professionals across industries.</p>
+          </div>
+        </AnimatedElement>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-gradient-to-r from-[#007bff] to-[#28a745] text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <AnimatedElement animation="fade" client:load>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Join Our Mission</h2>
+        <p class="text-xl mb-8 max-w-2xl mx-auto">
+          Be part of transforming healthcare staffing. Whether you're a hospital looking for qualified professionals or a nurse seeking your next opportunity, we're here to help.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/hospitals/register" class="btn bg-white text-primary-600 hover:bg-gray-100 hover:scale-105 transition-all">
+            Partner as a Hospital
+          </a>
+          <a href="/nurses/register" class="btn bg-transparent border-2 border-white hover:bg-white hover:text-primary-600 hover:scale-105 transition-all">
+            Join as a Nurse
+          </a>
+        </div>
+      </AnimatedElement>
+    </div>
+  </section>
+</Layout>
