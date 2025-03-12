@@ -4,6 +4,7 @@ import vue from '@astrojs/vue';
 
 export default defineConfig({
   site: 'https://ivan-de-jager248.github.io',
+  base: 'Cyber-Nurse',
   redirects: {
     '/login': '/',
     '/register': '/',
