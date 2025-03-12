@@ -6,8 +6,8 @@ export default defineConfig({
   site: 'https://ivan-de-jager248.github.io',
   base: 'Cyber-Nurse',
   redirects: {
-    '/Cyber-Nurse/login': '/Cyber-Nurse/',
-    '/Cyber-Nurse/register': '/Cyber-Nurse/',
+    '/Cyber-Nurse/login': '/Cyber-Nurse',
+    '/Cyber-Nurse/register': '/Cyber-Nurse',
     '/Cyber-Nurse/hospitals/register': '/Cyber-Nurse/hospitals',
     '/Cyber-Nurse/nurses/register': '/Cyber-Nurse/nurses'
   },
